@@ -1,0 +1,21 @@
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.item img {
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px 10px 0;
+}
+
+.description {
+    margin-right: 120px;
+    margin-left: 20px;
+
+}
+
+.count {
+    opacity: 70%;
+}

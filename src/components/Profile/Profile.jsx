@@ -7,9 +7,8 @@ import { ProfileCard } from './ProfileCard/ProfileCard'
 export const Profile = () => {
     return (
       <div className={style.profile}>
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-fff2lftqIE077pFAKU1Mhbcj8YFvBbMvpA&usqp=CAU' />
       <div>
-      <ProfileCard />
+      <ProfileCard userName={'Sver'} userStatus={'Koshi for work, Geine for soul'}/>
     </div>
       <MyPosts />
 

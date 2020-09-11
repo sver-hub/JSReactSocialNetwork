@@ -1,3 +1,37 @@
-.profileCard {
+.profileCardWrapper {
     color: ivory;
+    display: flex;
+}
+
+.profileCardWrapper img {
+    width: 100px;
+    height: 120px;
+    padding: 20px;
+
+}
+
+.infoWrapper {
+    padding: 20px;
+    width: 100%;
+}
+
+.userName {
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+}
+
+.userStatus {
+    font-size: .9rem;
+    opacity: 80%;
+    padding-bottom: 15px;
+}
+
+.userInfo {
+    padding: 20px 0 20px 0;
+    border-top: #8d8d8d solid 1px;
+    border-bottom: #8d8d8d solid 1px;
+}
+
+.accountInfo {
+    padding-top: 15px;
 }
