@@ -1,15 +1,68 @@
 .post {
-    
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
 }
 
-.item {
-    color: greenyellow;
-
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: #eee solid 1px;
+    padding-bottom: 3px;
 }
 
-.item img {
+.userPic {
     width: 40px;
     height: 40px;
-    border-radius: 20px;
-    
+    border-radius: 50%;
+    margin-right: 8px;
 }
+
+.userName {
+    font-size: 1.3rem;
+    margin-top: -3px;
+}
+
+.date {
+    color: #aaa;
+    font-size: .9rem;
+    margin-left: auto;
+}
+
+.content {
+    padding: 20px 10px;
+    /*margin-top: -10px;*/
+    /*margin-bottom: -10px;*/
+    /*display: inline-block;*/
+}
+
+.content p {
+    margin: 0;
+}
+
+.footer {
+    border-top: #eee solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.likeWrapper, .shareWrapper, .commentWrapper{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #aaaaaa;
+}
+
+.likeBtn, .shareBtn, .commentBtn {
+    display: inline-block;
+    margin-right: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.likeWrapper.active *{
+    color: #e64646;
+}
+

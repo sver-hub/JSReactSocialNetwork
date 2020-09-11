@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app-wrapper {
   display: grid;
 
@@ -6,6 +11,8 @@
   "nav content";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
+
+  font-family: Roboto, -apple-system, sans-serif;
   /* grid-gap: 10px; */
 }
 
