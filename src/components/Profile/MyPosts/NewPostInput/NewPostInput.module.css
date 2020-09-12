@@ -1,0 +1,41 @@
+.newPostWrapper {
+    background-color: #fff;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 3rem 0 #0000003b;
+}
+
+.userPic {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.postInput {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.submitBtn {
+    width: 100px;
+    height: 40px;
+    padding: 0 2px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    background-color: #c1c1c1;
+    border: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.submitBtn:hover {
+    background-color: #d6d6d6;
+}

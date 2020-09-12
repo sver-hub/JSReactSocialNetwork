@@ -1,16 +1,17 @@
 import React from 'react';
 import style from './MyPosts.module.css'
-import { Post } from './Post/Post'
+import {Post} from './Post/Post'
 
-export const MyPosts = () => {
+export const MyPosts = (props) => {
     return (
         <div>
-      posts
-      <div>
-        new post
-      </div>
-      <Post message='post 1 hello' likes='21'/>
-      <Post message='post 2 bye' likes='24'/>
-    </div>
+            {props.posts.map((post, index) => <Post key={index}
+                                                    userName={post.userName}
+                                                    message={post.message}
+                                                    likes={post.likes}
+                                                    comments={post.comments}
+                                                    shares={post.shares}
+                                                    imgUrl={post.imgUrl}/>)}
+        </div>
     )
 }

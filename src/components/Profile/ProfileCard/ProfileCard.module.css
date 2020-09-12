@@ -1,18 +1,28 @@
 .profileCardWrapper {
-    color: ivory;
+    color: black;
     display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 3rem 0 #0000003b;
 }
 
-.profileCardWrapper img {
-    width: 100px;
-    height: 120px;
-    padding: 20px;
+.profileCardWrapper .userPic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
 
+.profileCardWrapper .userPic img {
+    height: 100%;
 }
 
 .infoWrapper {
     padding: 20px;
-    width: 100%;
+    flex-grow: 1;
 }
 
 .userName {

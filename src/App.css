@@ -7,13 +7,13 @@ body {
   display: grid;
 
   grid-template-areas: 
-  "header header"
-  "nav content";
+  "header header header"
+  "nav content side";
   grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 27% 1fr 15% ;
 
   font-family: Roboto, -apple-system, sans-serif;
-  /* grid-gap: 10px; */
+   grid-gap: 10px;
 }
 
 

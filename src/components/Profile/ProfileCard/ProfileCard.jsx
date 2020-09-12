@@ -7,7 +7,9 @@ export const ProfileCard = (props) => {
     const iconUrl1 = 'https://w7.pngwing.com/pngs/144/173/png-transparent-person-icon-illustration-computer-icons-icon-design-symbol-person-symbol-miscellaneous-monochrome-sticker-thumbnail.png';
     return (
         <div className={ style.profileCardWrapper }>
-            <img src="https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg" alt=""/>
+            <div className={style.userPic}>
+                <img src={'https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg'} alt={'jopa'}/>
+            </div>
             <div className={style.infoWrapper}>
                 <div className={style.userName}>{props.userName}</div>
                 <div className={style.userStatus}>{props.userStatus}</div>

@@ -1,7 +1,9 @@
 .post {
     padding: 10px 15px;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 3rem 0 #0000003b;
 }
 
 .header {
