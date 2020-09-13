@@ -5,8 +5,7 @@ body {
 
 .app-wrapper {
   display: grid;
-
-  grid-template-areas: 
+  grid-template-areas:
   "header header header"
   "nav content side";
   grid-template-rows: 40px 1fr;
@@ -14,6 +13,10 @@ body {
 
   font-family: Roboto, -apple-system, sans-serif;
    grid-gap: 10px;
+}
+
+.contentWrapper {
+  grid-area: content;
 }
 
 

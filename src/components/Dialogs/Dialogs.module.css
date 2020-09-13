@@ -1,0 +1,14 @@
+.dialogsWrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: green solid 1px;
+    margin: 10px;
+}
+
+.dialogListWrapper {
+    border: solid 1px;
+}
+
+.currentDialogWrapper {
+    border: red solid 1px;
+}
