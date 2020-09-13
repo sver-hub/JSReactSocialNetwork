@@ -7,8 +7,8 @@
 }
 
 .profileCardWrapper .userPic {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     overflow: hidden;
     margin: 20px;
     display: flex;
@@ -32,7 +32,7 @@
 
 .userStatus {
     font-size: .9rem;
-    opacity: 80%;
+    color: #292929;
     padding-bottom: 15px;
 }
 

@@ -9,7 +9,7 @@ body {
   grid-template-areas: 
   "header header header"
   "nav content side";
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 40px 1fr;
   grid-template-columns: 27% 1fr 15% ;
 
   font-family: Roboto, -apple-system, sans-serif;

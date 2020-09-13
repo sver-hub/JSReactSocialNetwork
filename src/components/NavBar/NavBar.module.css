@@ -1,11 +1,10 @@
 .nav {
     grid-area: nav;
-    margin-left: 130px;
+    margin-left: auto;
+    margin-right: 10%;
     background-color: white;
   }
 
-.item {
-    color: #1d1d1d;
-    font-size: 1.1rem;
-    margin: 10px;
+.nav ol {
+    list-style: none;
 }

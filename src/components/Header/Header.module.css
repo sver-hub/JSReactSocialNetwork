@@ -1,8 +1,12 @@
 .header {
     grid-area: header;
     background-color: grey;
+    position: fixed;
+    width: 100%;
+
   }
 
 .header img {
-    width: 60px;
+    margin-left: 200px;
+    width: 40px;
 }
