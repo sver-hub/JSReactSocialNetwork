@@ -48,9 +48,7 @@ const data = {
 export const Profile = () => {
     return (
         <div className={style.profile}>
-            <div>
-                <ProfileCard userImg={data.imgUrl} userName={data.userName} userStatus={data.userStatus}/>
-            </div>
+            <ProfileCard userImg={data.imgUrl} userName={data.userName} userStatus={data.userStatus}/>
             <NewPostInput imgUrl={data.imgUrl}/>
             <MyPosts posts={data.posts}/>
 

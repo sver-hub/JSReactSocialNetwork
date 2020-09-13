@@ -1,14 +1,19 @@
 .dialogsWrapper {
     display: grid;
-    grid-template-columns: 30% 70%;
-    border: green solid 1px;
-    margin: 10px;
+    grid-template-columns: 200px 1fr;
+    min-height: 88vh;
 }
 
 .dialogListWrapper {
-    border: solid 1px;
+    border-right: #aaaaaa solid 1px;
 }
 
 .currentDialogWrapper {
-    border: red solid 1px;
+
+}
+
+.dialogsWrapper ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

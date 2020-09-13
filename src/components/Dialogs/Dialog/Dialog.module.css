@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    border-bottom: #aaaaaa solid 1px;
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.wrapper:hover {
+    background-color: #e7e7e7;
+}
+.thumbnail {
+    position: relative;
+    margin: 9px 7px 8px 0;
+}
+
+.thumbnail  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.unread {
+    background-color: grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    font-size: .8rem;
+    min-width: 15px;
+    text-align: center;
+}
+
+.online {
+    background-color: #6cac06;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    border-radius: 50%;
+    border: white solid 1px;
+    width: 8px;
+    height: 8px;
+}
+
+.content {
+    margin: 5px 5px 5px 0;
+    font-size: .8rem;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+}
+
+.name {
+    font-size: .9rem;
+}
+
+.timestamp {
+    margin-left: auto;
+    color: #aaaaaa;
+}
+
+.preview {
+    margin-top: 10px;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.senderName {
+    color: #aaaaaa;
+}
+
+.previewMessage {
+    margin-left: 2px;
+    color: #818181;
+}

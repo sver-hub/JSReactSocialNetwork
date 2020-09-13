@@ -9,10 +9,14 @@ body {
   "header header header"
   "nav content side";
   grid-template-rows: 40px 1fr;
-  grid-template-columns: 27% 1fr 15% ;
+  grid-template-columns: 27% 1fr 10% ;
+  grid-gap: 10px;
 
+  min-height: 100vh;
+  min-width: 100vh;
+  
   font-family: Roboto, -apple-system, sans-serif;
-   grid-gap: 10px;
+  background-color: #eaeaea;
 }
 
 .contentWrapper {
