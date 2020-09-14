@@ -1,0 +1,29 @@
+.wrapper {
+    grid-area: newmessage;
+    border-top: var(--dialog_border);
+    display: flex;
+    align-items: center;
+}
+
+.messageInput {
+    flex-grow: 1;
+    padding: 0 15px;
+    height: 36px;
+    outline: none;
+    border: #aaaaaa solid 1px;
+    border-radius: 4px;
+}
+
+.clip, .microphone {
+    margin: 20px 15px;
+    height: 24px;
+    width: 24px;
+}
+
+.clip {
+    background: url('https://www.flaticon.com/svg/static/icons/svg/876/876210.svg');
+}
+
+.microphone {
+    background: url('https://www.flaticon.com/svg/static/icons/svg/786/786257.svg');
+}

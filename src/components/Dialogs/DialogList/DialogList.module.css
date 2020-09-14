@@ -1,0 +1,10 @@
+.dialogListWrapper {
+    grid-area: dialoglist;
+    border-right: var(--dialog_border);
+}
+
+.dialogListWrapper ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

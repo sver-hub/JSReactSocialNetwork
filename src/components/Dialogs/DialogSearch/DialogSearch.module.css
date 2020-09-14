@@ -1,0 +1,20 @@
+.wrapper {
+    grid-area: dialogsearch;
+    border-bottom: var(--dialog_border);
+    border-right: var(--dialog_border);
+    display: flex;
+    align-items: center;
+}
+
+.magnifyingGlass {
+    margin: 10px;
+    height: 14px;
+    width: 14px;
+    background: url('https://www.flaticon.com/svg/static/icons/svg/483/483356.svg');
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    height: 26px;
+}

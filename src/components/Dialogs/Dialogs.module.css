@@ -1,19 +1,12 @@
 .dialogsWrapper {
     display: grid;
+    grid-template-areas:
+    'dialogsearch dialogheader'
+    'dialoglist dialoghistory'
+    'dialoglist newmessage';
     grid-template-columns: 200px 1fr;
+    grid-template-rows: 48px 1fr 63px;
     min-height: 88vh;
 }
 
-.dialogListWrapper {
-    border-right: #aaaaaa solid 1px;
-}
 
-.currentDialogWrapper {
-
-}
-
-.dialogsWrapper ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}

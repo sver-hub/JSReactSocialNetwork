@@ -3,12 +3,16 @@ body {
   padding: 0;
 }
 
+:root {
+  --dialog_border: #bfbfbf solid 1px;
+}
+
 .app-wrapper {
   display: grid;
   grid-template-areas:
   "header header header"
   "nav content side";
-  grid-template-rows: 40px 1fr;
+  grid-template-rows: 44px 1fr;
   grid-template-columns: 27% 1fr 10% ;
   grid-gap: 10px;
 

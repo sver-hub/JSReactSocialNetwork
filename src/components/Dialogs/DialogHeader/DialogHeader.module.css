@@ -1,0 +1,27 @@
+.wrapper {
+    grid-area: dialogheader;
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    border-bottom: var(--dialog_border);
+    font-size: .9rem;
+}
+
+.name {
+
+}
+
+.status {
+    margin-left: 5px;
+    color: #aaaaaa;
+}
+
+.thumbnail {
+    margin-left: auto;
+}
+
+.thumbnail img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
