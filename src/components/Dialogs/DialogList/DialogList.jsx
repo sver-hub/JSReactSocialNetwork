@@ -2,6 +2,7 @@ import React from "react";
 import style from './DialogList.module.css'
 import {Dialog} from "./Dialog/Dialog";
 
+
 export const DialogList = (props) => {
     return (
         <div className={style.dialogListWrapper}>

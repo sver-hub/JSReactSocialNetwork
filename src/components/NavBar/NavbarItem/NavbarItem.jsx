@@ -2,6 +2,7 @@ import React from "react";
 import style from './NavbarItem.module.css'
 import {NavLink} from "react-router-dom";
 
+
 export const NavbarItem = (props) => {
     return (
         <li>

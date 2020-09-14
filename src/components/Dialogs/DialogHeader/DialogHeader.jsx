@@ -1,6 +1,7 @@
 import React from "react";
 import style from './DialogHeader.module.css'
 
+
 export const DialogHeader = (props) => {
     return (
         <div className={style.wrapper}>

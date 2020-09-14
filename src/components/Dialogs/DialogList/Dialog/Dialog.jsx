@@ -2,9 +2,10 @@ import React from "react";
 import style from './Dialog.module.css'
 import {NavLink} from "react-router-dom";
 
+
 export const Dialog = (props) => {
     return (
-        <NavLink to={''} className={style.wrapper}>
+        <NavLink to={'/dialogs/' + props.id} className={style.wrapper}>
             <div className={style.thumbnail}>
                 <img src={props.imgUrl} alt=""/>
                 {props.unread !== 0 &&
