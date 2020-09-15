@@ -1,3 +1,5 @@
+import {profileReducer} from "./profileReducer";
+
 const dialogs = [
     {
         id: 1,
@@ -85,19 +87,6 @@ const state = {
 
 
 
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-
-
-
-export const addPostActionCreator = () => ({type: ADD_POST})
-
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, text: text})
-
-
-
-
-
 export let store = {
     _state: state,
 
@@ -108,24 +97,8 @@ export let store = {
     },
 
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
-            posts.unshift({
-                userName: 'Sver',
-                date: 'Sem 13, 22:10',
-                message: this._state.profile.newPostText,
-                likes: 0,
-                comments: 0,
-                shares: 0,
-                imgUrl: 'https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg'
-            })
-
-            this._state.profile.newPostText = '';
-            this._subscribedFunction();
-        }
-        else if (action.type === 'UPDATE-NEW-POST-TEXT'){
-            this._state.profile.newPostText = action.text;
-            this._subscribedFunction();
-        }
+        profileReducer(this._state.profile, action);
+        this._subscribedFunction();
     },
 
     subscribe(subscriberFunction){
