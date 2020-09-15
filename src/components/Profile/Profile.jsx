@@ -8,8 +8,8 @@ import {NewPostInput} from "./MyPosts/NewPostInput/NewPostInput";
 export const Profile = (props) => {
     return (
         <div className={style.profile}>
-            <ProfileCard {...props.profile}/>
-            <NewPostInput imgUrl={props.profile.imgUrl}/>
+            <ProfileCard {...props.userData}/>
+            <NewPostInput imgUrl={props.userData.imgUrl} newPostText={props.newPostText} dispatch={props.dispatch}/>
             <MyPosts posts={props.posts}/>
         </div>
     )

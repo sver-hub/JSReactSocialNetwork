@@ -7,7 +7,7 @@ export const NavBar = (props) => {
     return (
         <nav className={style.nav}>
             <ol>
-                {props.items.map((item, index) => <NavbarItem key={index} {...item}/>)}
+                {props.navItems.map((navItem, index) => <NavbarItem key={index} {...navItem}/>)}
             </ol>
         </nav>
     )
