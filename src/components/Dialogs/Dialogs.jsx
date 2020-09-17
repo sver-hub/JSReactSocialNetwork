@@ -18,7 +18,7 @@ export const Dialogs = (props) => {
                 <DialogHeader dialogName={props.dialogs.dialogList[0].dialogName} dialogStatus={props.dialogs.dialogList[0].status}
                               imgUrl={props.dialogs.dialogList[0].imgUrl}/>
                 <DialogHistory messages={props.dialogs.messages}/>
-                <NewMessageInput/>
+                <NewMessageInput textAreaContent={props.dialogs.textAreaContent} dispatch={props.dispatch}/>
             </div>
         </FloatingWrapper>
     )
