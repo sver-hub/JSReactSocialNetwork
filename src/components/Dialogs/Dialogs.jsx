@@ -9,14 +9,15 @@ import {DialogSearch} from "./DialogSearch/DialogSearch";
 
 
 export const Dialogs = (props) => {
+    debugger;
     return (
         <FloatingWrapper>
             <div className={style.dialogsWrapper}>
                 <DialogSearch/>
-                <DialogList dialogs={props.dialogs}/>
-                <DialogHeader dialogName={props.dialogs[0].dialogName} dialogStatus={props.dialogs[0].status}
-                              imgUrl={props.dialogs[0].imgUrl}/>
-                <DialogHistory/>
+                <DialogList dialogs={props.dialogs.dialogList}/>
+                <DialogHeader dialogName={props.dialogs.dialogList[0].dialogName} dialogStatus={props.dialogs.dialogList[0].status}
+                              imgUrl={props.dialogs.dialogList[0].imgUrl}/>
+                <DialogHistory messages={props.dialogs.messages}/>
                 <NewMessageInput/>
             </div>
         </FloatingWrapper>

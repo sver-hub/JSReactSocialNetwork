@@ -1,6 +1,7 @@
 import {profileReducer} from "./profileReducer";
+import {dialogsReducer} from "./dialogsReducer";
 
-const dialogs = [
+const dialogList = [
     {
         id: 1,
         imgUrl: 'https://sun1-47.userapi.com/VjwdhQdrVdnj0vM83TBcr11D3iBIgIFwG-0wQA/V62nA_GEtg4.jpg?ava=1',
@@ -34,7 +35,7 @@ const dialogs = [
         online: true,
         status: 'last seen 5 minutes ago'
     },
-]
+];
 
 const navItems = [
     {iconUrl: 'https://www.flaticon.com/svg/static/icons/svg/846/846449.svg', itemUrl: '/profile', itemName: 'Profile'},
@@ -76,7 +77,11 @@ const posts = [
 ]
 
 const state = {
-    dialogs: dialogs,
+    dialogs: {
+        dialogList: dialogList,
+        messages: [],
+        textAreaContent: '',
+    },
     navItems: navItems,
     profile: {
         userData: userData,
@@ -84,7 +89,6 @@ const state = {
         posts: posts
     },
 }
-
 
 
 export let store = {
@@ -98,10 +102,11 @@ export let store = {
 
     dispatch(action) {
         profileReducer(this._state.profile, action);
+        dialogsReducer(this._state.dialogs, action);
         this._subscribedFunction();
     },
 
-    subscribe(subscriberFunction){
+    subscribe(subscriberFunction) {
         this._subscribedFunction = subscriberFunction;
     }
 }
