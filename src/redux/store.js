@@ -82,7 +82,9 @@ const state = {
         messages: [],
         textAreaContent: '',
     },
-    navItems: navItems,
+    navbar: {
+        navItems: navItems,
+    },
     profile: {
         userData: userData,
         newPostText: '',
