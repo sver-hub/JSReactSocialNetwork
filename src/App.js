@@ -6,6 +6,7 @@ import {Route} from "react-router-dom";
 import {NavbarContainer} from "./components/NavBar/NavbarContainer";
 import {DialogsContainer} from "./components/Dialogs/DialogsContainer";
 import {ProfileContainer} from "./components/Profile/ProfileContainer";
+import {FriendsSearchResultsContainer} from "./components/Friends/FindFriends/FriendsSearchResults/FriendsSearchResultsContainer";
 
 
 const App = (props) => {
@@ -16,6 +17,7 @@ const App = (props) => {
             <div className={'contentWrapper'}>
                 <Route path={'/profile'} render={() => <ProfileContainer/>}/>
                 <Route path={'/dialogs'} render={() => <DialogsContainer/>}/>
+                <Route path={'/findFriends'} render={() => <FriendsSearchResultsContainer />} />
             </div>
         </div>
     )

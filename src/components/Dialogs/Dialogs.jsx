@@ -9,7 +9,6 @@ import {DialogSearch} from "./DialogSearch/DialogSearch";
 
 
 export const Dialogs = (props) => {
-    debugger;
     return (
         <FloatingWrapper>
             <div className={style.dialogsWrapper}>

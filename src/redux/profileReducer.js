@@ -37,9 +37,11 @@ const initialState =
 
 
 export const profileReducer = (state = initialState, action) => {
+
     switch (action.type) {
         case ADD_POST :
-            state.posts.unshift({
+
+            let newPost = {
                 userName: 'Sver',
                 date: 'Sem 13, 22:10',
                 message: state.newPostText,
@@ -47,15 +49,20 @@ export const profileReducer = (state = initialState, action) => {
                 comments: 0,
                 shares: 0,
                 imgUrl: 'https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg'
-            })
+            }
 
-            state.newPostText = '';
+            return {
+                ...state,
+                posts: [newPost, ...state.posts],
+                newPostText: '',
+            };
 
-            return state;
 
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.text;
-            return state;
+            return {
+                ...state,
+                newPostText: action.text,
+            };
 
         default:
             return state;

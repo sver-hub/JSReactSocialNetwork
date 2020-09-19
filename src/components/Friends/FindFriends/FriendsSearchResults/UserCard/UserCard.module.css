@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    border-top: var(--dialog_border)
+}
+
+.photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    transition-duration: .25s;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.name {
+    padding-bottom: 5px;
+}
+
+.location, .status {
+    font-size: .9rem;
+    color: #8d8d8d;
+    padding-bottom: 5px;
+}
+
+.followUnfollowBtn {
+    width: 100px;
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a5a5a;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.followUnfollowBtn:hover {
+    background-color: #818181;
+}
