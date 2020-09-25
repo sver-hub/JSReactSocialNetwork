@@ -12,8 +12,11 @@ export const NewMessageInput = (props) => {
             <span className={style.clip} />
             <input type='text' className={style.messageInput} placeholder={'New message...'}
             value={props.textAreaContent} onChange={onTextAreaChange}/>
-            <button onClick={props.onSubmitClick}>Send</button>
-            <span className={style.microphone}/>
+            {props.send ?
+                <button className={style.send} onClick={props.onSubmitClick}></button> :
+                <span className={style.microphone}/>}
+
+
         </div>
     )
 }

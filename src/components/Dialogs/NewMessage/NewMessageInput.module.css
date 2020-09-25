@@ -14,7 +14,7 @@
     border-radius: 4px;
 }
 
-.clip, .microphone {
+.clip, .microphone, .send{
     margin: 20px 15px;
     height: 24px;
     width: 24px;
@@ -26,4 +26,10 @@
 
 .microphone {
     background: url('https://www.flaticon.com/svg/static/icons/svg/786/786257.svg');
+}
+
+.send {
+    border: none;
+    outline: none;
+    background: url('https://www.flaticon.com/svg/static/icons/svg/876/876777.svg');
 }

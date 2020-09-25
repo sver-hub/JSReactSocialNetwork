@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background-color: grey;
+    background-color: #223843;
     position: fixed;
     width: 100%;
 

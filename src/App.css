@@ -4,7 +4,14 @@ body {
 }
 
 :root {
-  --dialog_border: #bfbfbf solid 1px;
+  --dialog_border: var(--color-light-gray) solid 1px;
+  --color-gun-metal : #223843;
+  --color-white: #EFF1F3;
+  --color-light-gray: #DBD3D8;
+  --color-desert-sand: #D8B4A0;
+  --color-terra-cotta: #D77A61;
+  --color-terra-cotta-hover: #e38a72;
+  /*#bfbfbf*/
 }
 
 .app-wrapper {
@@ -20,7 +27,7 @@ body {
   min-width: 100vh;
   
   font-family: Roboto, -apple-system, sans-serif;
-  background-color: #eaeaea;
+  background-color: var(--color-white);
 }
 
 .contentWrapper {

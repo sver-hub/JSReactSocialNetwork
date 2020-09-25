@@ -6,6 +6,7 @@ import {connect} from "react-redux";
 const mapStateToProps = (state) => {
     return {
         textAreaContent: state.dialogs.textAreaContent,
+        send: state.dialogs.textAreaContent !== '',
     }
 }
 
