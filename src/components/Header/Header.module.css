@@ -3,7 +3,7 @@
     background-color: #223843;
     position: fixed;
     width: 100%;
-
+    z-index: 99999;
   }
 
 .header img {
