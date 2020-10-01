@@ -2,26 +2,26 @@ import React from 'react';
 import './App.css';
 
 import {Header} from './components/Header/Header.jsx';
-import {Route} from "react-router-dom";
 import {NavbarContainer} from "./components/NavBar/NavbarContainer";
-import {DialogsContainer} from "./components/Dialogs/DialogsContainer";
-import {ProfileContainer} from "./components/Profile/ProfileContainer";
-import {FriendsSearchResultsContainer} from "./components/Friends/FindFriends/FriendsSearchResults/FriendsSearchResultsContainer";
-import {Auth} from "./components/Auth/Auth";
+import {useRoutes} from "./routes";
+import {AuthContext} from "./context/AuthContext";
+import {useAuth} from "./hooks/auth.hook";
 
 
 const App = (props) => {
+    const {token, userId, login, logout} = useAuth()
+    const isAuthenticated = !!token
+    const routes = useRoutes(isAuthenticated)
     return (
-        <div className='app-wrapper'>
-            <Header/>
-            <NavbarContainer/>
-            <div className={'contentWrapper'}>
-                <Route path={'/auth'} render={() => <Auth/>}/>
-                <Route path={'/profile'} render={() => <ProfileContainer/>}/>
-                <Route path={'/dialogs'} render={() => <DialogsContainer/>}/>
-                <Route path={'/findFriends'} render={() => <FriendsSearchResultsContainer />} />
+        <AuthContext.Provider value={{token, login, logout, userId, isAuthenticated}}>
+            <div className='app-wrapper'>
+                <Header/>
+                <NavbarContainer/>
+                <div className={'contentWrapper'}>
+                    {routes}
+                </div>
             </div>
-        </div>
+        </AuthContext.Provider>
     )
 }
 
