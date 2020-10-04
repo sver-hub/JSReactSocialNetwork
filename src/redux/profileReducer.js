@@ -1,17 +1,13 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const ADD_POST = 'ADD-POST'
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
 
 
-export const addPostActionCreator = () => ({type: ADD_POST})
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, text: text})
+export const addPost = () => ({type: ADD_POST})
+export const updateNewPostText = (text) => ({type: UPDATE_NEW_POST_TEXT, text: text})
 
 const initialState =
     {
-    userData: {
-        userName: 'Sver',
-        userStatus: 'Koshi for work, Geine for soul',
-        imgUrl: 'https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg',
-    },
+    userData: null,
 
     posts: [
         {
@@ -55,16 +51,16 @@ export const profileReducer = (state = initialState, action) => {
                 ...state,
                 posts: [newPost, ...state.posts],
                 newPostText: '',
-            };
+            }
 
 
         case UPDATE_NEW_POST_TEXT:
             return {
                 ...state,
                 newPostText: action.text,
-            };
+            }
 
         default:
-            return state;
+            return state
     }
 }

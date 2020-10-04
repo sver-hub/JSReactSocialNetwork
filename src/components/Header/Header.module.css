@@ -6,7 +6,21 @@
     z-index: 99999;
   }
 
-.header img {
+.wrapper {
+    display: flex;
+}
+
+.wrapper img {
     margin-left: 200px;
     width: 40px;
+}
+
+.logout {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1000px;
+
 }

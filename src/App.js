@@ -9,14 +9,14 @@ import {useAuth} from "./hooks/auth.hook";
 
 
 const App = (props) => {
-    const {token, userId, login, logout} = useAuth()
+    const {token, login, logout} = useAuth()
     const isAuthenticated = !!token
     const routes = useRoutes(isAuthenticated)
     return (
-        <AuthContext.Provider value={{token, login, logout, userId, isAuthenticated}}>
+        <AuthContext.Provider value={{token, login, logout, isAuthenticated}}>
             <div className='app-wrapper'>
                 <Header/>
-                <NavbarContainer/>
+                {isAuthenticated && <NavbarContainer/>}
                 <div className={'contentWrapper'}>
                     {routes}
                 </div>

@@ -9,9 +9,5 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-    }
-}
 
-export const ProfileContainer = connect(mapStateToProps, mapDispatchToProps)(Profile);
+export const ProfileContainer = connect(mapStateToProps, {})(Profile);

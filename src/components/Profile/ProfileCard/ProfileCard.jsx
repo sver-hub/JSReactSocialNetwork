@@ -13,8 +13,9 @@ export const ProfileCard = (props) => {
                     <img src={'https://sun1-84.userapi.com/c834404/v834404259/181331/_8I5zPYp_wE.jpg'} alt={'jopa'}/>
                 </div>
                 <div className={style.infoWrapper}>
-                    <div className={style.userName}>{props.userName}</div>
-                    <div className={style.userStatus}>{props.userStatus}</div>
+                    <div className={style.userName}>{`${props.name} ${props.surname}`}</div>
+                    <div className={style.userStatus}>{props.status}</div>
+                    <div className={style.userStatus}>{props.location}</div>
                     <div className={style.userInfo}>
                         personal info
                     </div>

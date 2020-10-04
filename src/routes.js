@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Redirect, Route, Switch} from "react-router-dom";
 import {ProfileContainer} from "./components/Profile/ProfileContainer";
 import {DialogsContainer} from "./components/Dialogs/DialogsContainer";
@@ -10,10 +10,10 @@ export const useRoutes = (isAuthenticated) => {
     if (isAuthenticated) {
         return (
             <Switch>
-                <Route path={'/profile'} render={() => <ProfileContainer/>}/>
+                <Route path={'/profile/'} render={() => <ProfileContainer/>}/>
                 <Route path={'/dialogs'} render={() => <DialogsContainer/>}/>
                 <Route path={'/findFriends'} render={() => <FriendsSearchResultsContainer />} />
-                <Redirect to={'/profile'} />
+                <Redirect from={'/'} to={'/profile'} />
             </Switch>
         )
     }

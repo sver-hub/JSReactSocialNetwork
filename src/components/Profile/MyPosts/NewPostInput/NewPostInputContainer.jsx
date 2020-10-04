@@ -1,20 +1,22 @@
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../../redux/profileReducer";
+import {
+    addPost,
+    updateNewPostText,
+} from "../../../../redux/profileReducer";
 import {NewPostInput} from "./NewPostInput";
 import {connect} from "react-redux";
 
 
 const mapStateToProps = (state) => {
-    return {
-        imgUrl: state.profile.userData.imgUrl,
-        newPostText: state.profile.newPostText,
+    if (state.profile.userData) {
+        return {
+            imgUrl: state.profile.userData.imgUrl,
+            newPostText: state.profile.newPostText,
+        }
+    } else {
+        return {
+            newPostText: state.profile.newPostText,
+        }
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onSubmitClick: () => dispatch(addPostActionCreator()),
-        onTextAreaChange: (text) => dispatch(updateNewPostTextActionCreator(text)),
-    }
-}
-
-export const NewPostInputContainer = connect(mapStateToProps, mapDispatchToProps)(NewPostInput);
+export const NewPostInputContainer = connect(mapStateToProps, {addPost, updateNewPostText})(NewPostInput);
